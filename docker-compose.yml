@@ -1,0 +1,105 @@
+version: '2'
+
+services:
+    ape_TeamKonQuest:
+        image: consol/centos-xfce-vnc
+        restart: always
+        container_name: TeamKonQuest
+        privileged: true
+        ports:
+            - 5901:5901
+            - 6901:6901
+        networks:
+            - ape_internal
+        volumes:
+            - ape_TeamKonQuest/:/home/chrome
+
+    ape_VerseBornMusic:
+        image: consol/centos-xfce-vnc
+        restart: always
+        container_name: VerseBornMusic
+        privileged: true
+        ports:
+            - 5902:5901
+            - 6902:6901
+        networks:
+            - ape_internal
+        volumes:
+            - ape_VerseBornMusic/:/home/chrome
+
+    ape_VerseBorn:
+        image: consol/centos-xfce-vnc
+        restart: always
+        container_name: VerseBorn
+        privileged: true
+        ports:
+            - 5903:5901
+            - 6903:6901
+        networks:
+            - ape_internal
+        volumes:
+            - ape_VerseBorn/:/home/chrome
+
+    ape_KonQuestNow:
+        image: consol/centos-xfce-vnc
+        restart: always
+        container_name: KonQuestNow
+        privileged: true
+        ports:
+            - 5904:5901
+            - 6904:6901
+        networks:
+            - ape_internal
+        volumes:
+            - ape_KonQuestNow/:/home/chrome
+
+    ape_IndiePush:
+        image: consol/centos-xfce-vnc
+        restart: always
+        container_name: IndiePush
+        privileged: true
+        ports:
+            - 5905:5901
+            - 6905:6901
+        networks:
+            - ape_internal
+        volumes:
+            - ape_IndiePush/:/home/chrome
+
+    ape_KQNTW:
+        image: consol/centos-xfce-vnc
+        restart: always
+        container_name: KQNTW
+        privileged: true
+        ports:
+            - 5906:5901
+            - 6906:6901
+        networks:
+            - ape_internal
+        volumes:
+            - ape_KQNTW/:/home/chrome
+
+    ape_VBTW:
+        image: consol/centos-xfce-vnc
+        restart: always
+        container_name: VBTW
+        privileged: true
+        ports:
+            - 5907:5901
+            - 6907:6901
+        networks:
+            - ape_internal
+        volumes:
+            - ape_VBTW/:/home/chrome
+
+networks:
+    ape_internal:
+
+volumes:
+    ape_TeamKonQuest:
+    ape_VerseBornMusic:
+    ape_VerseBorn:
+    ape_KonQuestNow:
+    ape_IndiePush:
+    ape_KQNTW:
+    ape_VBTW:
