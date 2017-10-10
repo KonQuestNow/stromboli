@@ -2,7 +2,7 @@ version: '2'
 
 services:
     ape_TeamKonQuest:
-        image: consol/centos-xfce-vnc
+        image: tkqn
         restart: always
         container_name: TeamKonQuest
         privileged: true
