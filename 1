@@ -2,7 +2,7 @@ version: '2'
 
 services:
     ape_TeamKonQuest:
-        image: britham/tkqn
+        image: tkqn
         restart: always
         container_name: TeamKonQuest
         privileged: true
@@ -15,7 +15,7 @@ services:
             - ape_TeamKonQuest/:/home/chrome
 
     ape_VerseBornMusic:
-        image: britham/vbm
+        image: vbm
         restart: always
         container_name: VerseBornMusic
         privileged: true
@@ -28,7 +28,7 @@ services:
             - ape_VerseBornMusic/:/home/chrome
 
     ape_VerseBorn:
-        image: britham/vb
+        image: vb
         restart: always
         container_name: VerseBorn
         privileged: true
@@ -41,7 +41,7 @@ services:
             - ape_VerseBorn/:/home/chrome
 
     ape_KonQuestNow:
-        image: britham/kqn
+        image: kqn
         restart: always
         container_name: KonQuestNow
         privileged: true
@@ -54,7 +54,7 @@ services:
             - ape_KonQuestNow/:/home/chrome
 
     ape_IndiePush:
-        image: britham/ipp
+        image: ipp
         restart: always
         container_name: IndiePush
         privileged: true
@@ -75,4 +75,3 @@ volumes:
     ape_VerseBorn:
     ape_KonQuestNow:
     ape_IndiePush:
-
